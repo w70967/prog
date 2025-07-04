@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Form</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Muslim Yegizbay</h1>
+    <form id="userDataForm">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1">
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+    <div id="userDataDisplay">
+      <h2>Users List</h2>
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="task.js"></script>
+</body>
+</html>
